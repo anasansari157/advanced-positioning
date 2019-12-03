@@ -1,0 +1,200 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS Reset */
+
+body {
+    background-image: url("../images/bg.jpg");
+}
+
+.header {
+    background-color: crimson;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navRight {
+    position: absolute;
+    right: 10px;
+    top: 15px;   
+}
+
+a {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* Main section */
+
+.main {
+    /*position: relative; */
+    margin: 0px auto;
+    padding-top: 150px;
+    width: 80%;
+}
+
+.article {
+    margin: 0px auto 50px auto;
+}
+
+.articleColumn {
+    width: 40%;
+    color: white;
+    float: left;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: ;
+}
+
+.imageColumn {
+    float: right;
+    box-sizing: border-box;
+    width: 40%;
+}
+
+.image {
+    width: 100%;
+}
+
+
+/* Clearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table; /*uisng block also works*/
+}
+
+    .clearfix:after {
+        clear: both;
+    }
+
+.gallery {
+    color: white;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.galleryColumn {
+    border: 2px solid yellow;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 20px 20px 30px rgb(148, 148, 10) ;
+}
+
+.galleryImage {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    margin: 10px;
+}
+
+
+.footer {
+    height: 50px;
+    background-color: rgb(4, 119, 39);
+    text-align: center;
+    padding: 10px 50px;
+}
+
+
+/* 3D Button */
+
+.box {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    padding: 35px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.box1 {
+    background-color: white;
+    box-shadow: -6px 6px 8px rgb(78, 76, 76);
+    transition: background-color 0.2s;
+}
+
+.box1:active {
+    background-color: #776e6e;
+    bottom: 14px;
+    right: 26px;
+    box-shadow: -1px 1px 0 gray;
+}
+
